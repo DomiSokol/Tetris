@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:uap5=" http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+  IgnorableNamespaces="uap mp uap5 rescap" >
+
+  <Identity
+    Name="56076a28-94a8-4d99-9299-ad45c7dab7d4"
+    Publisher="CN=Domi"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="56076a28-94a8-4d99-9299-ad45c7dab7d4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Tetris</DisplayName>
+    <PublisherDisplayName>Domi</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+
+  
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Tetris.App">        
+      <uap:VisualElements       
+        DisplayName="Tetris"        
+        Square150x150Logo="Assets\AppManifest\Square150x150Logo.png"
+        Description="Tetris"
+        BackgroundColor="transparent" Square44x44Logo="Assets\AppManifest\Square44x44Logo.targetsitze-256.png">
+        <uap:DefaultTile  Square71x71Logo="Assets\AppManifest\SmallTile.png" Square310x310Logo="Assets\AppManifest\BigTile.png" Wide310x150Logo="Assets\AppManifest\Wide310x150Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square310x310Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square150x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen BackgroundColor="#000000" a:Optional="true" xmlns:a="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" Image="Assets\AppManifest\SplashScreen.png"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="broadFileSystemAccess" />
+  </Capabilities>
+
+</Package>

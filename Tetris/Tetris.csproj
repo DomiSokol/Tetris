@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{FAD055DD-A167-49CC-B709-F68E48A4C8EB}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tetris</RootNamespace>
+    <AssemblyName>Tetris</AssemblyName>
+    <DefaultLanguage>de-DE</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Highscore.cs" />
+    <Compile Include="Music.cs" />
+    <Compile Include="Score.cs" />
+    <Compile Include="Tetron.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AppManifest\BigTile.scale-200.png" />
+    <Content Include="Assets\AppManifest\SmallTile.scale-200.png" />
+    <Content Include="Assets\AppManifest\Square44x44Logo.targetsitze-256.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\Backgrounds\CreditsBorder.png" />
+    <Content Include="Assets\Backgrounds\CreditsFill.png" />
+    <Content Include="Assets\Backgrounds\GameOver.png" />
+    <Content Include="Assets\Backgrounds\HighscoreBackground.png" />
+    <Content Include="Assets\Backgrounds\MainBackground.png" />
+    <Content Include="Assets\Backgrounds\SettingsBackground.png" />
+    <Content Include="Assets\Buttons\Game\ButtonMenu.png" />
+    <Content Include="Assets\Buttons\Game\ButtonMenuHovered.png" />
+    <Content Include="Assets\Buttons\Game\ButtonResume.png" />
+    <Content Include="Assets\Buttons\Game\ButtonResumeHovered.png" />
+    <Content Include="Assets\Buttons\Game\ButtonSave.png" />
+    <Content Include="Assets\Buttons\Game\ButtonSaveHovered.png" />
+    <Content Include="Assets\Buttons\Highscore\ButtonReset.png" />
+    <Content Include="Assets\Buttons\Highscore\ButtonResetHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonCredits.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonCreditsHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonExit.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonExitHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonHighscore.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonHighscoreHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonPlay.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonPlayHighligted.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonPlayHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonSettings.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonSettingsHovered.png" />
+    <Content Include="Assets\Buttons\MainPage\ButtonSettingsHovered1.png" />
+    <Content Include="Assets\Layout\LinkeSeite.png" />
+    <Content Include="Assets\Layout\RechteSeite.png" />
+    <Content Include="Assets\Music\MainTheme.mp3" />
+    <Content Include="Assets\Settings\Controls.png" />
+    <Content Include="Assets\Settings\MoveLeft.png" />
+    <Content Include="Assets\Settings\MoveRight.png" />
+    <Content Include="Assets\Settings\Pause.png" />
+    <Content Include="Assets\Settings\RotateLeft.png" />
+    <Content Include="Assets\Settings\RotateRight.png" />
+    <Content Include="Assets\Settings\SoftDrop.png" />
+    <Content Include="Assets\Buttons\Settings\VolumeHigher.png" />
+    <Content Include="Assets\Buttons\Settings\VolumeHigherHovered.png" />
+    <Content Include="Assets\Buttons\Settings\VolumeLower.png" />
+    <Content Include="Assets\Buttons\Settings\VolumeLowerHovered.png" />
+    <Content Include="Assets\Credits\Alexei.png" />
+    <Content Include="Assets\Credits\CharlesMichel.png" />
+    <Content Include="Assets\Credits\CreatedAndDirected.png" />
+    <Content Include="Assets\Credits\DominikBraun.png" />
+    <Content Include="Assets\Credits\EasterEgg\EasterEgg.png" />
+    <Content Include="Assets\Credits\EasterEgg\EasterEgg2.png" />
+    <Content Include="Assets\Credits\EasterEgg\EasterEgg3.png" />
+    <Content Include="Assets\Credits\ExecutiveProducer.png" />
+    <Content Include="Assets\Credits\FesliyanStudios.png" />
+    <Content Include="Assets\Credits\Fonts.png" />
+    <Content Include="Assets\Credits\HaleyHalcyon.png" />
+    <Content Include="Assets\Credits\Heart.png" />
+    <Content Include="Assets\Credits\JuhaniJunkala.png" />
+    <Content Include="Assets\Credits\Korobeiniki.png" />
+    <Content Include="Assets\Credits\LeadGameplayDesigner.png" />
+    <Content Include="Assets\Credits\MrGameplay.png" />
+    <Content Include="Assets\Credits\MusicAndSounds.png" />
+    <Content Include="Assets\Credits\MyComputer.png" />
+    <Content Include="Assets\Credits\MyFamily.png" />
+    <Content Include="Assets\Credits\MyFollower.png" />
+    <Content Include="Assets\Credits\MyFriends.png" />
+    <Content Include="Assets\Credits\Name.png" />
+    <Content Include="Assets\Credits\NeonTubes2.png" />
+    <Content Include="Assets\Credits\ProductionAssistant.png" />
+    <Content Include="Assets\Credits\SpecialThanks.png" />
+    <Content Include="Assets\Credits\StarJedi.png" />
+    <Content Include="Assets\Credits\ThanksForPlaying.png" />
+    <Content Include="Assets\Credits\UiUxArtist.png" />
+    <Content Include="Assets\Credits\You.png" />
+    <Content Include="Assets\Layout\Background.png" />
+    <Content Include="Assets\Blocks\blueBlock.png" />
+    <Content Include="Assets\Blocks\greenBlock.png" />
+    <Content Include="Assets\Blocks\orangeBlock.png" />
+    <Content Include="Assets\Blocks\purpleBlock.png" />
+    <Content Include="Assets\Blocks\redBlock.png" />
+    <Content Include="Assets\Blocks\turkisBlock.png" />
+    <Content Include="Assets\Blocks\yellowBlock.png" />
+    <Content Include="Assets\Music\Button_Click.wav" />
+    <Content Include="Assets\Music\Credits.mp3" />
+    <Content Include="Assets\Music\CreditsShortend.mp3" />
+    <Content Include="Assets\Music\GameOver.mp3" />
+    <Content Include="Assets\Music\HighscoreList.mp3" />
+    <Content Include="Assets\Music\LevelUp.mp3" />
+    <Content Include="Assets\Music\LinesDestroyed.mp3" />
+    <Content Include="Assets\Music\MainMenu.mp3" />
+    <Content Include="Assets\Music\NewHighscore.mp3" />
+    <Content Include="Assets\Music\Pause.wav" />
+    <Content Include="Assets\Settings\Space.png" />
+    <Content Include="Assets\Settings\StoreTetron.png" />
+    <Content Include="Assets\Settings\Volume.png" />
+    <Content Include="Assets\AppManifest\SplashScreen.scale-200.png" />
+    <Content Include="Assets\AppManifest\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Tetrons\blueTetron.png" />
+    <Content Include="Assets\Tetrons\greenTetron.png" />
+    <Content Include="Assets\Tetrons\orangeTetron.png" />
+    <Content Include="Assets\Tetrons\purpleTetron.png" />
+    <Content Include="Assets\Tetrons\redTetron.png" />
+    <Content Include="Assets\Tetrons\turkisTetron.png" />
+    <Content Include="Assets\Tetrons\yellowTetron.png" />
+    <Content Include="Assets\AppManifest\Wide310x150Logo.scale-200.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.11</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Font\NeonTubes2.otf" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
